@@ -6,6 +6,7 @@ html {
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 .m-l{margin-left: 150px;}
@@ -123,13 +124,13 @@ body{
 }
 
 .how-it-works{
-    position: absolute;
     width: 100%;
     background-color: #f8f4ef;
+    margin-top: -28px;
 }
 
 .how-it-works h1{
-    margin-top: 100px;
+    padding-top: 100px;
     font-size: 40px;
     font-weight: 500;
 }
@@ -206,9 +207,9 @@ body{
 }
 
 .faqs{
-    margin-top: 1250px;
     width: 100%;
     background-color: #f8f8f8;
+    margin-top: -28px;
 }
 
 .faqs h1{
@@ -217,7 +218,7 @@ body{
 }
 
 .title-faq-section{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .div-title-faq{
@@ -228,8 +229,8 @@ body{
 }
 
 h1.faq-title{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .triangle{
@@ -266,4 +267,5 @@ h1.faq-title{
     color: #0066FF;
     border: solid 1px #0066FF;
     background-color: #f8f8f8;
+    margin-bottom: 100px;
 }
