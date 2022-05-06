@@ -9,12 +9,16 @@ body{
     margin: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 .m-l{margin-left: 150px;}
 .m-r{margin-right: 150px;}
 
 .header{
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,6 +40,11 @@ body{
 .header li {
     margin-left: 50px;
     font-size: 14px;
+}
+
+a:link, a:visited, a:hover, a:active  {
+    text-decoration: none;
+    color: #000000;
 }
 
 .logo{
@@ -233,6 +242,10 @@ h1.faq-title{
     font-weight: 400;
 }
 
+hr {
+    border: solid 0.0001em #e7e7e7;
+}
+
 .triangle{
     margin: auto;
     width: 5%;
@@ -268,4 +281,124 @@ h1.faq-title{
     border: solid 1px #0066FF;
     background-color: #f8f8f8;
     margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.div-more-faqs{
+    display: none;
+}
+
+.div-more.faqs.active{
+    display: block;
+}
+
+.ft-bg{
+    background-color: #273343;
+}
+
+.footer-top{
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.company{
+    width: 22.5%;
+    padding-top: 30px;
+}
+
+.tutor{
+    width: 22.5%;
+    padding-top: 30px;
+}
+
+.help {
+    width: 22.5%;
+    padding-top: 30px;
+}
+
+.follow-us{
+    width: 25%;
+    padding-top: 45px;
+    padding-left: 550px;
+}
+
+.footer-top ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-top h5 {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-top li {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.hashtag{
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.follow-us h5{
+    font-size: 15px;
+}
+
+i{
+    color: #a9adb4;
+    padding-right: 20px;
+}
+
+.icons{
+    margin-bottom: 30px;
+}
+
+.fb-bg{
+    background-color: #232e3c;
+}
+
+.footer-bottom{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-bottom span{
+    color: #bdc0c4;
+    font-size: 15px;
+}
+
+.copyright{
+    width: 50%;
+}
+
+.made-in-usa{
+    width: 50%;
+    text-align: right;
+}
+
+.footer-button{
+    width: 100%;
+}
+
+.wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.content{
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.options{
+    display: flex;
+  flex-direction: row;
 }
