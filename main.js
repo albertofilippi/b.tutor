@@ -22,3 +22,36 @@ $(".more-faqs").click(function() {
         x = 1;
     }
 });
+
+const wrapper = document.querySelector('.wrapper');
+selectBtn = document.querySelector('.select-btn');
+options = document.querySelector('.options');
+title = document.getElementsByClassName('.language-title');
+
+let languages = ["English (EN)", "French (FR)"];
+
+function addLanguage(){
+    languages.forEach(language => {
+
+        if(language.indexOf('French (FR)'))
+        {
+        let li = `<label><li class="li-language" onclick="updateName(this)"><input type="radio" name = "language" class="radio-button">${language}</input></li></label><hr style="border-top: 0.001em solid #eaeaea; width: 100%;">`;
+        options.insertAdjacentHTML("beforeend", li);
+        }
+        else{
+            let li = `<label><li class="li-language" onclick="updateName(this)"><input type="radio" name = "language" class="radio-button">${language}</input></li></label>`;
+            options.insertAdjacentHTML("beforeend", li);
+        }
+    })
+}
+
+addLanguage();
+
+function updateName(selectedLi){
+    selectBtn.children[1].innerText = selectedLi.innerText;
+    wrapper.classList.remove('active');
+}
+
+selectBtn.addEventListener('click', () =>{
+    wrapper.classList.toggle('active');
+})

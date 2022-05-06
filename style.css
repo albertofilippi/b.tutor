@@ -390,15 +390,61 @@ i{
     display: inline-block;
 }
 
+.select-btn{
+    cursor: pointer;
+}
+
 .content{
   position: absolute;
-  background-color: #f1f1f1;
+  margin-top: 10px;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 7px;
+  display: none;
 }
+
+.content::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    margin-left: -7px;
+	margin-top:-7px;
+    width: 0;
+    z-index:1;
+    height: 0;
+    border-bottom: solid 7px #FFF;
+    border-left: solid 7px transparent;
+    border-right: solid 7px transparent; 
+}
+
+.wrapper.active .content{
+    display: block;
+  }
 
 .options{
     display: flex;
-  flex-direction: row;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.options li{
+    margin-left: 0;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.select-btn i{
+    padding: 3px;
+    color: black;
+}
+
+.radio-button{
+    left: 15px;
+    position: absolute;
 }
